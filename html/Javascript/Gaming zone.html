@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Gaming Zone Entry Pass</title>
+
+<script>
+
+function enterGame()
+{
+    alert(" Welcome to Xtreme Gaming Zone!");
+
+    var entry = confirm("Do you want to enter the Gaming Zone?");
+
+    if(entry)
+    {
+        var game = prompt("Enter your favourite game:");
+
+        if(game != null && game != "")
+        {
+            alert(" Entry Pass Generated Successfully!\n\nGame: " + game + "\nEnjoy Your Gaming Session!");
+        }
+        else
+        {
+            alert(" Entry Pass Generated!\nEnjoy Your Gaming Session!");
+        }
+    }
+    else
+    {
+        alert(" Visit Again! We Hope to See You Soon.");
+    }
+}
+
+</script>
+
+</head>
+
+<body bgcolor="#E6F7FF">
+
+<center>
+
+<h1>
+<font color="darkblue">
+ XTREME GAMING ZONE 
+</font>
+</h1>
+
+<hr color="blue" width="70%">
+
+<br>
+
+<img src="C:\Users\ELCOT\Downloads\gaming zone.jpg" width="450" height="280" border="5">
+
+<br><br>
+
+<font size="5" color="darkgreen">
+Experience the Ultimate Gaming Adventure!
+</font>
+
+<br><br>
+
+<input type="button" value=" Get Entry Pass" onclick="enterGame()">
+
+<br><br>
+
+<font color="red" size="4">
+<b>Play • Compete • Win • Have Fun!</b>
+</font>
+
+</center>
+
+</body>
+</html>
