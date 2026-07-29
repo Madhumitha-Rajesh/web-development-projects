@@ -1,0 +1,25 @@
+<html>
+
+<head><title>Online Quiz</title>
+<script>
+function submitQuiz(){
+ let score=0;
+ for(let i=1;i<=10;i++){
+   let a=document.querySelector('input[name="q'+i+'"]:checked');
+   if(!a){alert("Please answer all questions.");return;}
+   if(a.value=="1") score++;
+ }
+ document.getElementById("result").innerHTML="<h2>Your Score: "+score+" / 10</h2>";
+}
+</script></head>
+<body bgcolor="#E6F7FF">
+
+<center>
+<h1> Online Quiz</h1><hr width="60%">
+</center>
+<form>
+<p><b>Q1. HTML stands for?</b><br><input type="radio" name="q1" value="1"> Hyper Text Markup Language<br><input type="radio" name="q1" value="0"> High Text Machine Language<br><input type="radio" name="q1" value="0"> Hyperlinks<br></p><p><b>Q2. JavaScript is a?</b><br><input type="radio" name="q2" value="1"> Programming Language<br><input type="radio" name="q2" value="0"> Database<br><input type="radio" name="q2" value="0"> Browser<br></p><p><b>Q3. CSS is used for?</b><br><input type="radio" name="q3" value="1"> Styling<br><input type="radio" name="q3" value="0"> Database<br><input type="radio" name="q3" value="0"> Compiler<br></p><p><b>Q4. Which tag inserts image?</b><br><input type="radio" name="q4" value="1"> img<br><input type="radio" name="q4" value="0"> image<br><input type="radio" name="q4" value="0"> pic<br></p><p><b>Q5. Which symbol ends JS statement?</b><br><input type="radio" name="q5" value="1"> ;<br><input type="radio" name="q5" value="0"> ?<br><input type="radio" name="q5" value="0"> :<br></p><p><b>Q6. Which tag creates hyperlink?</b><br><input type="radio" name="q6" value="1"> a<br><input type="radio" name="q6" value="0"> link<br><input type="radio" name="q6" value="0"> href<br></p><p><b>Q7. Which input hides text?</b><br><input type="radio" name="q7" value="1"> password<br><input type="radio" name="q7" value="0"> text<br><input type="radio" name="q7" value="0"> hidden<br></p><p><b>Q8. Which is loop?</b><br><input type="radio" name="q8" value="1"> for<br><input type="radio" name="q8" value="0"> if<br><input type="radio" name="q8" value="0"> switch<br></p><p><b>Q9. Which keyword declares variable?</b><br><input type="radio" name="q9" value="1"> var<br><input type="radio" name="q9" value="0"> print<br><input type="radio" name="q9" value="0"> echo<br></p><p><b>Q10. HTML file extension?</b><br><input type="radio" name="q10" value="1"> .html<br><input type="radio" name="q10" value="0"> .exe<br><input type="radio" name="q10" value="0"> .doc<br></p><input type="button" value="Submit Quiz" onclick="submitQuiz()">
+<input type="reset" value="Clear">
+</form><div id="result"></div>
+</body>
+</html>
