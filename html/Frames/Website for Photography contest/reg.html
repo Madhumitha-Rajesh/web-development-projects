@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contest Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+function validateForm()
+{
+
+var name=document.forms["myForm"]["name"].value;
+
+var email=document.forms["myForm"]["email"].value;
+
+if(name=="")
+{
+alert("Please enter your name.");
+return false;
+}
+
+if(email=="")
+{
+alert("Please enter your email.");
+return false;
+}
+
+alert("Registration Successful!");
+
+return true;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📸 Photography Contest 2026</h1>
+
+<p>Register to Participate</p>
+
+</header>
+
+<nav>
+
+<a href="mainpg.html">Home</a>
+
+<a href="gall.html">Gallery</a>
+
+<a href="reg.html">Register</a>
+
+<a href="winners.html">Winners</a>
+
+<a href="cont.html">Contact</a>
+
+</nav>
+
+<section>
+
+<h2>Participant Registration Form</h2>
+
+<form name="myForm" onsubmit="return validateForm()">
+
+<label>Full Name</label>
+
+<input type="text" name="name">
+
+<br><br>
+
+<label>Email</label>
+
+<input type="email" name="email">
+
+<br><br>
+
+<label>Phone Number</label>
+
+<input type="tel">
+
+<br><br>
+
+<label>Age</label>
+
+<input type="number">
+
+<br><br>
+
+<label>Gender</label>
+
+<input type="radio" name="gender">Male
+
+<input type="radio" name="gender">Female
+
+<input type="radio" name="gender">Other
+
+<br><br>
+
+<label>Photography Category</label>
+
+<select>
+
+<option>Select Category</option>
+
+<option>Nature</option>
+
+<option>Wildlife</option>
+
+<option>Portrait</option>
+
+<option>Street</option>
+
+<option>Landscape</option>
+
+</select>
+
+<br><br>
+
+<label>Photography Skills</label>
+
+<br>
+
+<input type="checkbox">Beginner
+
+<input type="checkbox">Intermediate
+
+<input type="checkbox">Professional
+
+<br><br>
+
+<label>Upload Your Photograph</label>
+
+<input type="file">
+
+<br><br>
+
+<label>Tell Us About Your Photo</label>
+
+<br>
+
+<textarea rows="5" cols="40"></textarea>
+
+<br><br>
+
+<input type="submit" value="Register">
+
+<input type="reset" value="Clear">
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Photography Contest | All Rights Reserved
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
