@@ -1,0 +1,80 @@
+/* Normal Selector */
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(186, 205, 83);
+    margin: 0;
+    padding: 0;
+}
+
+/* Class Selector */
+.container{
+    width: 450px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(246, 6, 6);
+}
+
+/* ID Selector */
+#title{
+    text-align: center;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+/* Normal Selector */
+label{
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Normal Selector */
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+/* Attribute Selector */
+input[type="submit"]{
+    background: rgb(135, 4, 243);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Attribute Selector */
+input[type="submit"]:hover{
+    background: darkgreen;
+}
+
+/* Class Selector */
+.result{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+/* Class Selector */
+.success{
+    color: rgb(1, 11, 204);
+    font-weight: bold;
+}
+
+/* Class Selector */
+.error{
+    color: red;
+    font-weight: bold;
+}
