@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Examination Result Analysis</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="result-paper">
+
+
+    <div class="title-section">
+
+
+        <div class="certificate-icon">
+
+            📜
+
+        </div>
+
+
+        <h1>Academic Result Portal</h1>
+
+        <p>Examination Performance Analysis</p>
+
+
+    </div>
+
+
+
+
+    <div class="subject-tags">
+
+
+        <span>Mathematics</span>
+
+        <span>Science</span>
+
+        <span>Computer</span>
+
+
+    </div>
+
+
+
+
+    <form action="process.php" method="POST">
+
+
+        <h2>Enter Student Marks</h2>
+
+
+
+
+        <div class="field">
+
+
+            <label>Student Name</label>
+
+
+            <input 
+            type="text"
+            name="name"
+            placeholder="Enter student name"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="field">
+
+
+            <label>Register Number</label>
+
+
+            <input 
+            type="text"
+            name="regno"
+            placeholder="Enter register number"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="marks-grid">
+
+
+            <div class="field">
+
+                <label>Subject 1</label>
+
+                <input 
+                type="number"
+                name="mark1"
+                min="0"
+                max="100"
+                required>
+
+            </div>
+
+
+
+            <div class="field">
+
+                <label>Subject 2</label>
+
+                <input 
+                type="number"
+                name="mark2"
+                min="0"
+                max="100"
+                required>
+
+            </div>
+
+
+
+            <div class="field">
+
+                <label>Subject 3</label>
+
+                <input 
+                type="number"
+                name="mark3"
+                min="0"
+                max="100"
+                required>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <button type="submit">
+
+            Generate Result
+
+        </button>
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
