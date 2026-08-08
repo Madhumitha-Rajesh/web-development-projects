@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Applicant Validation System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <div class="validation-page">
+
+
+        <!-- Left Verification Area -->
+
+        <section class="verification-area">
+
+            <div class="shield">
+
+                🛡️
+
+            </div>
+
+
+            <span class="small-label">
+
+                APPLICATION CHECK
+
+            </span>
+
+
+            <h1>
+
+                Verify<br>
+                Your Details
+
+            </h1>
+
+
+            <p>
+
+                Make sure your contact information is correct before submitting your application.
+
+            </p>
+
+
+            <div class="check-list">
+
+                <div>
+
+                    <span>01</span>
+
+                    Email verification
+
+                </div>
+
+
+                <div>
+
+                    <span>02</span>
+
+                    Password security
+
+                </div>
+
+
+                <div>
+
+                    <span>03</span>
+
+                    Mobile verification
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- Validation Form -->
+
+        <section class="form-area">
+
+
+            <div class="form-heading">
+
+                <span>Applicant Portal</span>
+
+                <h2>Validate Information</h2>
+
+                <p>Enter your details below</p>
+
+            </div>
+
+
+
+
+            <form action="process.php" method="POST">
+
+
+                <div class="field">
+
+                    <label>Email ID</label>
+
+                    <div class="input-wrapper">
+
+                        <span>✉</span>
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="name@example.com"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="field">
+
+                    <label>Password</label>
+
+                    <div class="input-wrapper">
+
+                        <span>🔑</span>
+
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Enter password"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="field">
+
+                    <label>Mobile Number</label>
+
+                    <div class="input-wrapper">
+
+                        <span>☎</span>
+
+                        <input
+                            type="text"
+                            name="mobile"
+                            placeholder="10 digit mobile number"
+                            maxlength="10"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="notice">
+
+                    <span>i</span>
+
+                    Your information will be checked before submission.
+
+                </div>
+
+
+
+
+                <button type="submit">
+
+                    Validate Application
+
+                    <span>→</span>
+
+                </button>
+
+
+            </form>
+
+
+        </section>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,648 @@
+/* =========================================
+   APPLICANT VALIDATION SYSTEM
+   Pastel Verification Station UI
+   ========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'DM Sans', sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:#f8fafc;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:30px;
+
+    color:#172033;
+
+}
+
+
+/* =========================================
+   MAIN PAGE
+   ========================================= */
+
+.validation-page{
+
+    width:1000px;
+
+    max-width:100%;
+
+    min-height:650px;
+
+    display:grid;
+
+    grid-template-columns:42% 58%;
+
+    background:#ffffff;
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 60px rgba(23,32,51,.12);
+
+}
+
+
+/* =========================================
+   LEFT VERIFICATION AREA
+   ========================================= */
+
+.verification-area{
+
+    background:#cffafe;
+
+    padding:55px 45px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* Decorative circles */
+
+.verification-area::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:#fff4b8;
+
+    top:-70px;
+
+    right:-60px;
+
+}
+
+
+.verification-area::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:#fce7f3;
+
+    bottom:-40px;
+
+    left:-35px;
+
+}
+
+
+/* Shield */
+
+.shield{
+
+    width:85px;
+
+    height:85px;
+
+    border-radius:25px;
+
+    background:#ffffff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:42px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 12px 25px rgba(8,145,178,.12);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* Small Label */
+
+.small-label{
+
+    display:inline-block;
+
+    padding:7px 13px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+    color:#0e7490;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+    margin-bottom:18px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* Main Heading */
+
+.verification-area h1{
+
+    font-size:44px;
+
+    line-height:1.05;
+
+    letter-spacing:-1.5px;
+
+    color:#164e63;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+.verification-area > p{
+
+    margin-top:22px;
+
+    max-width:330px;
+
+    line-height:1.7;
+
+    color:#155e75;
+
+    font-size:15px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* =========================================
+   CHECK LIST
+   ========================================= */
+
+.check-list{
+
+    margin-top:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:13px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+.check-list div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    background:rgba(255,255,255,.72);
+
+    padding:13px 15px;
+
+    border-radius:14px;
+
+    color:#164e63;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+.check-list span{
+
+    width:30px;
+
+    height:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#fff4b8;
+
+    border-radius:9px;
+
+    color:#854d0e;
+
+    font-size:11px;
+
+    font-weight:700;
+
+}
+
+
+/* =========================================
+   RIGHT FORM AREA
+   ========================================= */
+
+.form-area{
+
+    padding:55px 60px;
+
+    background:#ffffff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+.form-heading span{
+
+    color:#6366a8;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+
+.form-heading h2{
+
+    margin-top:8px;
+
+    font-size:31px;
+
+    color:#172033;
+
+}
+
+
+.form-heading p{
+
+    margin-top:7px;
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+form{
+
+    margin-top:32px;
+
+}
+
+
+.field{
+
+    margin-bottom:22px;
+
+}
+
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#334155;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+/* Input wrapper */
+
+.input-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    height:54px;
+
+    padding:0 16px;
+
+    border:2px solid #e2e8f0;
+
+    border-radius:14px;
+
+    background:#fafafa;
+
+    transition:.25s ease;
+
+}
+
+
+.input-wrapper > span{
+
+    width:30px;
+
+    height:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:9px;
+
+    background:#e0e7ff;
+
+    font-size:14px;
+
+}
+
+
+.input-wrapper input{
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#172033;
+
+    font-size:14px;
+
+}
+
+
+.input-wrapper input::placeholder{
+
+    color:#94a3b8;
+
+}
+
+
+.input-wrapper:focus-within{
+
+    border-color:#818cf8;
+
+    background:#ffffff;
+
+    box-shadow:0 0 0 4px rgba(129,140,248,.10);
+
+}
+
+
+/* =========================================
+   INFORMATION NOTICE
+   ========================================= */
+
+.notice{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:13px 15px;
+
+    margin:5px 0 22px;
+
+    border-radius:13px;
+
+    background:#fff4b8;
+
+    color:#713f12;
+
+    font-size:12px;
+
+    line-height:1.4;
+
+}
+
+
+.notice span{
+
+    width:22px;
+
+    height:22px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    font-weight:700;
+
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+button{
+
+    width:100%;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#6366a8;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+    transition:.25s ease;
+
+}
+
+
+button span{
+
+    font-size:22px;
+
+    line-height:0;
+
+}
+
+
+button:hover{
+
+    background:#4f518f;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(99,102,168,.2);
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media(max-width:800px){
+
+    .validation-page{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .verification-area{
+
+        padding:40px;
+
+    }
+
+
+    .verification-area h1{
+
+        font-size:36px;
+
+    }
+
+
+    .form-area{
+
+        padding:40px;
+
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    body{
+
+        padding:15px;
+
+    }
+
+
+    .validation-page{
+
+        border-radius:22px;
+
+    }
+
+
+    .verification-area{
+
+        padding:30px 25px;
+
+    }
+
+
+    .form-area{
+
+        padding:30px 25px;
+
+    }
+
+
+    .verification-area h1{
+
+        font-size:32px;
+
+    }
+
+
+    .form-heading h2{
+
+        font-size:26px;
+
+    }
+
+}
