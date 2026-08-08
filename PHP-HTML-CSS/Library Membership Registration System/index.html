@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Library Membership Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="library-box">
+
+
+    <div class="header">
+
+
+        <div class="book-icon">
+
+            📚
+
+        </div>
+
+
+        <h1>Digital Library</h1>
+
+        <p>Membership Registration Portal</p>
+
+
+    </div>
+
+
+
+    <form action="process.php" method="POST">
+
+
+
+        <h2>Member Information</h2>
+
+
+
+        <div class="input-group">
+
+
+            <label>Full Name</label>
+
+
+            <input 
+            type="text"
+            name="name"
+            placeholder="Enter member name"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+
+            <label>Email Address</label>
+
+
+            <input 
+            type="email"
+            name="email"
+            placeholder="Enter email address"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+
+            <label>Mobile Number</label>
+
+
+            <input 
+            type="text"
+            name="mobile"
+            maxlength="10"
+            placeholder="Enter mobile number"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+
+            <label>Date of Birth</label>
+
+
+            <input 
+            type="date"
+            name="dob"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+
+            <label>Membership Type</label>
+
+
+            <select name="membership" required>
+
+
+                <option value="">Select Membership</option>
+
+                <option value="Basic">Basic Membership</option>
+
+                <option value="Premium">Premium Membership</option>
+
+                <option value="Gold">Gold Membership</option>
+
+
+            </select>
+
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+
+            <label>Preferred Section</label>
+
+
+            <select name="section" required>
+
+
+                <option value="">Choose Section</option>
+
+                <option value="Fiction">Fiction</option>
+
+                <option value="Science">Science</option>
+
+                <option value="Technology">Technology</option>
+
+                <option value="History">History</option>
+
+
+            </select>
+
+
+        </div>
+
+
+
+        <button type="submit">
+
+            Register Membership
+
+        </button>
+
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
