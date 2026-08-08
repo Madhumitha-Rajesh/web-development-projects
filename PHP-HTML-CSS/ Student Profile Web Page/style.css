@@ -1,0 +1,248 @@
+/* Google Font */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+/* Main Profile Card */
+
+.profile-card{
+
+    width:900px;
+
+    max-width:100%;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.25);
+
+}
+
+/* Header */
+
+.header{
+
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+.profile-image{
+
+    width:120px;
+
+    height:120px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+}
+
+.profile-image i{
+
+    font-size:60px;
+
+    color:#2563eb;
+
+}
+
+.header h1{
+
+    font-size:32px;
+
+    margin-bottom:8px;
+
+}
+
+.header p{
+
+    font-size:18px;
+
+    color:#dbeafe;
+
+}
+
+/* Sections */
+
+.section{
+
+    margin:30px;
+
+    background:#f8fafc;
+
+    border-left:6px solid #2563eb;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    transition:0.3s;
+
+}
+
+.section:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+
+}
+
+.section h2{
+
+    color:#1e3a8a;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.section h2 i{
+
+    color:#2563eb;
+
+}
+
+/* Details Grid */
+
+.details{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.details div{
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #dbeafe;
+
+}
+
+.details strong{
+
+    display:block;
+
+    color:#475569;
+
+    margin-bottom:6px;
+
+    font-size:14px;
+
+}
+
+.details span{
+
+    color:#111827;
+
+    font-size:16px;
+
+    font-weight:500;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .header h1{
+
+        font-size:26px;
+
+    }
+
+    .details{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section{
+
+        margin:20px;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .profile-image{
+
+        width:90px;
+
+        height:90px;
+
+    }
+
+    .profile-image i{
+
+        font-size:45px;
+
+    }
+
+    .header p{
+
+        font-size:16px;
+
+    }
+
+}
