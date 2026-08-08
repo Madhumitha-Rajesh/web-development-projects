@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electricity Bill Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Panel -->
+
+    <div class="left-panel">
+
+        <i class="fa-solid fa-bolt"></i>
+
+        <h1>TNEB Electricity</h1>
+
+        <h3>Bill Calculator Portal</h3>
+
+        <p>
+            Calculate your electricity bill instantly based on the
+            number of units consumed.
+        </p>
+
+        <div class="info-box">
+            <p>⚡ Fast Bill Calculation</p>
+            <p>📄 Instant Bill Summary</p>
+            <p>💡 Simple Slab Rates</p>
+        </div>
+
+    </div>
+
+    <!-- Right Panel -->
+
+    <div class="right-panel">
+
+        <h2>Consumer Details</h2>
+
+        <form action="process.php" method="POST">
+
+            <div class="input-box">
+
+                <label>Customer Name</label>
+
+                <input
+                type="text"
+                name="name"
+                placeholder="Enter customer name"
+                required>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Consumer Number</label>
+
+                <input
+                type="text"
+                name="consumer"
+                placeholder="Enter consumer number"
+                required>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Units Consumed</label>
+
+                <input
+                type="number"
+                name="units"
+                min="0"
+                placeholder="Enter electricity units"
+                required>
+
+            </div>
+
+            <button type="submit">
+
+                <i class="fa-solid fa-calculator"></i>
+
+                Calculate Bill
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
