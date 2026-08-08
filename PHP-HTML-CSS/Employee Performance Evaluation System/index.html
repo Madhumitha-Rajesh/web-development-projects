@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Employee Performance Evaluation</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="evaluation-box">
+
+
+    <div class="dashboard-header">
+
+
+        <div class="chart-icon">
+
+            📈
+
+        </div>
+
+
+        <div>
+
+            <h1>Performance Analyzer</h1>
+
+            <p>Employee Evaluation Dashboard</p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="score-info">
+
+
+        <div class="score-card">
+
+            ⭐
+
+            <span>Quality</span>
+
+        </div>
+
+
+
+        <div class="score-card">
+
+            ⚡
+
+            <span>Efficiency</span>
+
+        </div>
+
+
+
+        <div class="score-card">
+
+            🚀
+
+            <span>Growth</span>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <form action="process.php" method="POST">
+
+
+        <h2>Enter Performance Details</h2>
+
+
+
+
+        <div class="field">
+
+
+            <label>Employee Name</label>
+
+
+            <input 
+            type="text"
+            name="name"
+            placeholder="Enter employee name"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="field">
+
+
+            <label>Employee ID</label>
+
+
+            <input 
+            type="text"
+            name="id"
+            placeholder="Enter employee ID"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="field">
+
+
+            <label>Performance Score (0 - 100)</label>
+
+
+            <input 
+            type="number"
+            name="score"
+            min="0"
+            max="100"
+            placeholder="Enter score"
+            required>
+
+
+        </div>
+
+
+
+
+        <button type="submit">
+
+            Evaluate Performance
+
+        </button>
+
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
