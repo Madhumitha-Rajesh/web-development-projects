@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Insurance Premium Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="insurance-app">
+
+
+    <div class="top-section">
+
+
+        <div class="shield">
+
+            🛡️
+
+        </div>
+
+
+        <div>
+
+            <h1>SecureLife</h1>
+
+            <p>Insurance Premium Calculator</p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="policy-info">
+
+
+        <div class="mini-card">
+
+            <span>✓</span>
+
+            Life Protection
+
+        </div>
+
+
+        <div class="mini-card">
+
+            <span>✓</span>
+
+            Flexible Plans
+
+        </div>
+
+
+        <div class="mini-card">
+
+            <span>✓</span>
+
+            Secure Future
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <form action="process.php" method="POST">
+
+
+        <h2>Policy Details</h2>
+
+
+
+        <div class="field">
+
+
+            <label>Customer Name</label>
+
+
+            <input 
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="field">
+
+
+            <label>Age</label>
+
+
+            <input 
+            type="number"
+            name="age"
+            placeholder="Enter age"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="field">
+
+
+            <label>Policy Term (Years)</label>
+
+
+            <select name="term" required>
+
+
+                <option value="">Select Term</option>
+
+                <option value="10">10 Years</option>
+
+                <option value="15">15 Years</option>
+
+                <option value="20">20 Years</option>
+
+                <option value="30">30 Years</option>
+
+
+            </select>
+
+
+        </div>
+
+
+
+
+        <div class="field">
+
+
+            <label>Coverage Amount</label>
+
+
+            <input 
+            type="number"
+            name="coverage"
+            placeholder="Enter coverage amount"
+            required>
+
+
+        </div>
+
+
+
+
+        <button type="submit">
+
+            Calculate Premium
+
+        </button>
+
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
