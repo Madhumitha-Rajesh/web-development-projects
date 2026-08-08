@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Email ID Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <i class="fa-solid fa-user-tie"></i>
+
+        <h1>Employee Email ID Generator</h1>
+
+        <p>Generate official company email IDs instantly.</p>
+
+    </div>
+
+    <form action="process.php" method="POST">
+
+        <div class="input-box">
+
+            <label>Employee Full Name</label>
+
+            <input
+            type="text"
+            name="name"
+            placeholder="Example: Madhumitha Rajesh"
+            required>
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Department</label>
+
+            <select name="department" required>
+
+                <option value="">Select Department</option>
+
+                <option>Human Resources</option>
+
+                <option>Finance</option>
+
+                <option>Marketing</option>
+
+                <option>IT</option>
+
+                <option>Operations</option>
+
+            </select>
+
+        </div>
+
+        <button type="submit">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            Generate Email ID
+
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
