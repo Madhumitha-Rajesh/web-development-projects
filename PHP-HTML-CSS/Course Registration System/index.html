@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Course Registration System</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="main">
+
+    <!-- Left Side -->
+
+    <div class="left">
+
+        <i class="fa-solid fa-laptop-code"></i>
+
+        <h1>EduLearn</h1>
+
+        <p>
+            Learn today's most in-demand skills.
+        </p>
+
+        <ul>
+
+            <li>✔ Expert Trainers</li>
+
+            <li>✔ Industry Projects</li>
+
+            <li>✔ Placement Assistance</li>
+
+            <li>✔ Flexible Timings</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="right">
+
+        <h2>Course Registration</h2>
+
+        <form action="process.php" method="POST">
+
+            <input type="text"
+            name="name"
+            placeholder="Full Name"
+            required>
+
+            <input type="email"
+            name="email"
+            placeholder="Email Address"
+            required>
+
+            <input type="tel"
+            name="mobile"
+            pattern="[0-9]{10}"
+            placeholder="Mobile Number"
+            required>
+
+            <input type="date"
+            name="dob"
+            required>
+
+            <select name="gender" required>
+
+                <option value="">Select Gender</option>
+
+                <option>Male</option>
+
+                <option>Female</option>
+
+                <option>Other</option>
+
+            </select>
+
+            <select name="course" required>
+
+                <option value="">Select Course</option>
+
+                <option>Python Programming</option>
+
+                <option>Web Development</option>
+
+                <option>Java Programming</option>
+
+                <option>Data Analytics</option>
+
+                <option>Cyber Security</option>
+
+            </select>
+
+            <select name="batch" required>
+
+                <option value="">Select Batch</option>
+
+                <option>Morning</option>
+
+                <option>Afternoon</option>
+
+                <option>Evening</option>
+
+            </select>
+
+            <select name="qualification" required>
+
+                <option value="">Qualification</option>
+
+                <option>Higher Secondary</option>
+
+                <option>Diploma</option>
+
+                <option>UG</option>
+
+                <option>PG</option>
+
+            </select>
+
+            <textarea
+            name="address"
+            rows="4"
+            placeholder="Enter Address"
+            required></textarea>
+
+            <button type="submit">
+
+                Register Now
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
