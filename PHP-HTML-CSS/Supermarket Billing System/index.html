@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Supermarket Billing System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <div class="header">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <h1>SuperMart Billing System</h1>
+
+        <p>Generate your customer invoice instantly</p>
+
+    </div>
+
+
+
+    <form action="process.php" method="POST">
+
+
+        <div class="input-group">
+
+            <label>Customer Name</label>
+
+            <input 
+            type="text" 
+            name="customer"
+            placeholder="Enter customer name"
+            required>
+
+        </div>
+
+
+
+        <div class="input-group">
+
+            <label>Product Name</label>
+
+            <input 
+            type="text" 
+            name="product"
+            placeholder="Enter product name"
+            required>
+
+        </div>
+
+
+
+        <div class="row">
+
+
+            <div class="input-group">
+
+                <label>Product Price (₹)</label>
+
+                <input 
+                type="number"
+                name="price"
+                placeholder="Enter price"
+                required>
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>Quantity</label>
+
+                <input 
+                type="number"
+                name="quantity"
+                min="1"
+                placeholder="Enter quantity"
+                required>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+            <label>Discount (%)</label>
+
+            <select name="discount">
+
+                <option value="0">No Discount</option>
+
+                <option value="5">5%</option>
+
+                <option value="10">10%</option>
+
+                <option value="15">15%</option>
+
+                <option value="20">20%</option>
+
+            </select>
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+            <label>GST (%)</label>
+
+            <select name="tax">
+
+                <option value="5">5%</option>
+
+                <option value="12">12%</option>
+
+                <option value="18">18%</option>
+
+            </select>
+
+        </div>
+
+
+
+        <button type="submit">
+
+            <i class="fa-solid fa-file-invoice"></i>
+
+            Generate Invoice
+
+        </button>
+
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
