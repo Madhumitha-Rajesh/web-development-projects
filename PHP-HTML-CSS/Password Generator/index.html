@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Password Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="vault">
+
+
+    <div class="header">
+
+        <div class="lock">
+
+            🔐
+
+        </div>
+
+
+        <h1>Password Vault</h1>
+
+        <p>Create a strong and secure password</p>
+
+    </div>
+
+
+
+    <form action="process.php" method="POST">
+
+
+        <div class="length-box">
+
+
+            <label>Password Length</label>
+
+
+            <input 
+            type="number"
+            name="length"
+            min="6"
+            max="20"
+            value="10"
+            required>
+
+
+        </div>
+
+
+
+
+        <h3>Password Requirements</h3>
+
+
+        <div class="options">
+
+
+            <div class="option">
+
+                <span>ABC</span>
+
+                Uppercase Letters
+
+            </div>
+
+
+
+            <div class="option">
+
+                <span>abc</span>
+
+                Lowercase Letters
+
+            </div>
+
+
+
+            <div class="option">
+
+                <span>123</span>
+
+                Numbers
+
+            </div>
+
+
+
+            <div class="option">
+
+                <span>@#</span>
+
+                Special Characters
+
+            </div>
+
+
+        </div>
+
+
+
+        <button type="submit">
+
+            Generate Secure Password
+
+        </button>
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
