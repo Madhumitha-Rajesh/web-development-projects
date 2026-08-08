@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mobile Bill Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="mobile-card">
+
+
+    <div class="top">
+
+        <div class="logo">
+            📱
+        </div>
+
+        <h1>My Mobile Hub</h1>
+
+        <p>Smart Billing System</p>
+
+    </div>
+
+
+
+    <form action="process.php" method="POST">
+
+
+        <h2>Customer Details</h2>
+
+
+        <div class="field">
+
+            <label>Customer Name</label>
+
+            <input 
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required>
+
+        </div>
+
+
+
+        <div class="field">
+
+            <label>Mobile Number</label>
+
+            <input 
+            type="text"
+            name="mobile"
+            placeholder="Enter mobile number"
+            required>
+
+        </div>
+
+
+
+        <h2>Choose Your Plan</h2>
+
+
+        <div class="plans">
+
+
+            <label class="plan">
+
+                <input type="radio" name="plan" value="Basic" required>
+
+                <div>
+
+                <b>Basic</b>
+
+                <span>₹199 / month</span>
+
+                </div>
+
+            </label>
+
+
+
+            <label class="plan">
+
+                <input type="radio" name="plan" value="Premium">
+
+                <div>
+
+                <b>Premium</b>
+
+                <span>₹399 / month</span>
+
+                </div>
+
+            </label>
+
+
+
+            <label class="plan">
+
+                <input type="radio" name="plan" value="Unlimited">
+
+                <div>
+
+                <b>Unlimited</b>
+
+                <span>₹599 / month</span>
+
+                </div>
+
+            </label>
+
+
+        </div>
+
+
+
+
+        <h2>Usage Details</h2>
+
+
+
+        <div class="usage">
+
+
+            <div class="field">
+
+            <label>Data Used (GB)</label>
+
+            <input 
+            type="number"
+            name="data"
+            required>
+
+            </div>
+
+
+
+            <div class="field">
+
+            <label>Call Minutes</label>
+
+            <input 
+            type="number"
+            name="minutes"
+            required>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <button>
+
+        Generate Bill
+
+        </button>
+
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
