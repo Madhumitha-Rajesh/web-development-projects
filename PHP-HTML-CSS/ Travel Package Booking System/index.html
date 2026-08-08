@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Travel Package Booking</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="travel-container">
+
+
+    <header>
+
+        <div class="icon">
+            🌍
+        </div>
+
+        <h1>Travel Explorer</h1>
+
+        <p>Book your dream vacation today</p>
+
+    </header>
+
+
+
+
+    <div class="packages">
+
+
+        <h2>Popular Packages</h2>
+
+
+        <div class="package-list">
+
+
+            <div class="package">
+
+                <h3>🏝 Maldives Escape</h3>
+
+                <p>5 Days / 4 Nights</p>
+
+                <b>₹45,000</b>
+
+            </div>
+
+
+
+            <div class="package">
+
+                <h3>🏔 Manali Adventure</h3>
+
+                <p>6 Days / 5 Nights</p>
+
+                <b>₹25,000</b>
+
+            </div>
+
+
+
+            <div class="package">
+
+                <h3>🏰 Rajasthan Heritage</h3>
+
+                <p>7 Days / 6 Nights</p>
+
+                <b>₹35,000</b>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <form action="process.php" method="POST">
+
+
+        <h2>Booking Details</h2>
+
+
+
+        <div class="input-group">
+
+            <label>Customer Name</label>
+
+            <input 
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required>
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+            <label>Email Address</label>
+
+            <input 
+            type="email"
+            name="email"
+            placeholder="Enter email"
+            required>
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+            <label>Phone Number</label>
+
+            <input 
+            type="text"
+            name="phone"
+            placeholder="Enter phone number"
+            required>
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+            <label>Select Travel Package</label>
+
+
+            <select name="package" required>
+
+
+                <option value="">Choose Package</option>
+
+                <option value="Maldives Escape">Maldives Escape - ₹45000</option>
+
+                <option value="Manali Adventure">Manali Adventure - ₹25000</option>
+
+                <option value="Rajasthan Heritage">Rajasthan Heritage - ₹35000</option>
+
+
+            </select>
+
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+            <label>Number of Travelers</label>
+
+            <input 
+            type="number"
+            name="people"
+            min="1"
+            required>
+
+        </div>
+
+
+
+
+        <button type="submit">
+
+            ✈ Confirm Booking
+
+        </button>
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
