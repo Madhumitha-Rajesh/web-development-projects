@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secure Bank Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+
+    <div class="left-panel">
+
+        <i class="fa-solid fa-building-columns"></i>
+
+        <h1>Secure Online Banking</h1>
+
+        <p>
+            Welcome to ABC Bank Internet Banking.
+            Access your account securely anytime, anywhere.
+        </p>
+
+        <div class="features">
+
+            <div><i class="fa-solid fa-shield-halved"></i> Secure Login</div>
+
+            <div><i class="fa-solid fa-lock"></i> Encrypted Transactions</div>
+
+            <div><i class="fa-solid fa-mobile-screen"></i> Mobile Banking</div>
+
+            <div><i class="fa-solid fa-credit-card"></i> Instant Payments</div>
+
+        </div>
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="right-panel">
+
+        <h2>Customer Login</h2>
+
+        <form action="process.php" method="POST">
+
+            <div class="input-box">
+
+                <label>Customer ID</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                    type="text"
+                    name="customer"
+                    placeholder="Enter Customer ID"
+                    required>
+
+                </div>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Password</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-key"></i>
+
+                    <input
+                    type="password"
+                    name="password"
+                    placeholder="Enter Password"
+                    required>
+
+                </div>
+
+            </div>
+
+            <button type="submit">
+
+                <i class="fa-solid fa-right-to-bracket"></i>
+
+                Login Securely
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
