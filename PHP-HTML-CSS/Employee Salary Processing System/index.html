@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Employee Salary Processing</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="payroll-box">
+
+
+    <div class="header">
+
+
+        <div class="icon">
+
+            💼
+
+        </div>
+
+
+        <h1>Smart Payroll</h1>
+
+        <p>Employee Salary Processing System</p>
+
+
+    </div>
+
+
+
+
+    <form action="process.php" method="POST">
+
+
+        <h2>Employee Salary Details</h2>
+
+
+
+
+        <div class="input-group">
+
+
+            <label>Employee Name</label>
+
+
+            <input 
+            type="text"
+            name="name"
+            placeholder="Enter employee name"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+
+            <label>Employee ID</label>
+
+
+            <input 
+            type="text"
+            name="id"
+            placeholder="Enter employee ID"
+            required>
+
+
+        </div>
+
+
+
+
+        <div class="salary-grid">
+
+
+            <div class="input-group">
+
+
+                <label>Basic Salary</label>
+
+
+                <input 
+                type="number"
+                name="basic"
+                placeholder="₹ Basic salary"
+                required>
+
+
+            </div>
+
+
+
+            <div class="input-group">
+
+
+                <label>HRA</label>
+
+
+                <input 
+                type="number"
+                name="hra"
+                placeholder="₹ HRA"
+                required>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="salary-grid">
+
+
+            <div class="input-group">
+
+
+                <label>Allowance</label>
+
+
+                <input 
+                type="number"
+                name="allowance"
+                placeholder="₹ Allowance"
+                required>
+
+
+            </div>
+
+
+
+            <div class="input-group">
+
+
+                <label>Deduction (%)</label>
+
+
+                <input 
+                type="number"
+                name="deduction"
+                placeholder="Enter percentage"
+                required>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <button type="submit">
+
+            Generate Salary Slip
+
+        </button>
+
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
