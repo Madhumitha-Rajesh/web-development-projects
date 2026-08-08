@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Result Processing System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <div class="header">
+
+        <i class="fa-solid fa-graduation-cap"></i>
+
+        <h1>Student Result Processing</h1>
+
+        <p>Enter marks to calculate result</p>
+
+    </div>
+
+
+
+    <form action="process.php" method="POST">
+
+
+        <div class="input-box">
+
+            <label>Student Name</label>
+
+            <input 
+            type="text"
+            name="name"
+            placeholder="Enter student name"
+            required>
+
+        </div>
+
+
+
+        <div class="input-box">
+
+            <label>Register Number</label>
+
+            <input 
+            type="text"
+            name="regno"
+            placeholder="Enter register number"
+            required>
+
+        </div>
+
+
+
+        <h3>Enter Subject Marks</h3>
+
+
+        <div class="row">
+
+
+            <div class="input-box">
+
+                <label>Python</label>
+
+                <input 
+                type="number"
+                name="python"
+                min="0"
+                max="100"
+                required>
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>Java</label>
+
+                <input 
+                type="number"
+                name="java"
+                min="0"
+                max="100"
+                required>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="row">
+
+
+            <div class="input-box">
+
+                <label>Database</label>
+
+                <input 
+                type="number"
+                name="database"
+                min="0"
+                max="100"
+                required>
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>Web Technology</label>
+
+                <input 
+                type="number"
+                name="web"
+                min="0"
+                max="100"
+                required>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="input-box">
+
+            <label>Computer Networks</label>
+
+            <input 
+            type="number"
+            name="network"
+            min="0"
+            max="100"
+            required>
+
+        </div>
+
+
+
+        <button type="submit">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            Calculate Result
+
+        </button>
+
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
