@@ -1,0 +1,334 @@
+/* Pastel Customer Registration UI */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:#dff6ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+
+
+/* Main Split Container */
+
+.registration-box{
+
+    width:950px;
+
+    max-width:100%;
+
+    background:#fffef7;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    box-shadow:
+
+    0 25px 60px rgba(120,53,15,.15);
+
+}
+
+
+
+/* Welcome Panel */
+
+.welcome-panel{
+
+    background:#fbcfe8;
+
+    padding:45px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+
+.customer-icon{
+
+    width:110px;
+
+    height:110px;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:55px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+
+    0 10px 25px rgba(190,24,93,.15);
+
+}
+
+
+
+.welcome-panel h1{
+
+    color:#831843;
+
+    font-size:40px;
+
+}
+
+
+
+.welcome-panel p{
+
+    color:#9f1239;
+
+    margin-top:15px;
+
+    line-height:1.6;
+
+}
+
+
+
+.benefits{
+
+    margin-top:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+
+.benefits span{
+
+    background:white;
+
+    padding:12px 20px;
+
+    border-radius:25px;
+
+    color:#78350f;
+
+    font-weight:600;
+
+}
+
+
+
+/* Form Panel */
+
+.form-panel{
+
+    padding:45px;
+
+}
+
+
+
+.form-panel h2{
+
+    color:#0369a1;
+
+    font-size:32px;
+
+}
+
+
+
+.subtitle{
+
+    color:#64748b;
+
+    margin:8px 0 30px;
+
+}
+
+
+
+/* Inputs */
+
+.field{
+
+    margin-bottom:20px;
+
+}
+
+
+
+label{
+
+    display:block;
+
+    color:#475569;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    border:2px solid #bae6fd;
+
+    background:#f0fdfa;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+
+
+input:focus{
+
+    border-color:#38bdf8;
+
+    background:white;
+
+}
+
+
+
+/* Button */
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#fb7185;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#e11d48;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* Decorative Text */
+
+.form-panel::after{
+
+    content:"💙 Trusted customers • Better experiences";
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+    font-style:italic;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:750px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+
+    .registration-box{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .welcome-panel{
+
+        padding:35px;
+
+    }
+
+
+    .form-panel{
+
+        padding:30px;
+
+    }
+
+}
