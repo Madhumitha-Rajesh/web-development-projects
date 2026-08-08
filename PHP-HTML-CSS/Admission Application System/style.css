@@ -1,0 +1,267 @@
+/* Google Font Applied */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+    background:linear-gradient(135deg,#4facfe,#6a11cb);
+
+}
+
+/* Main Card */
+
+.container{
+
+    width:900px;
+
+    max-width:100%;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+
+    border:1px solid rgba(255,255,255,0.3);
+
+}
+
+/* Heading */
+
+.title{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    color:white;
+
+}
+
+.title i{
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+    color:#FFD54F;
+
+}
+
+.title h1{
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+.title p{
+
+    font-size:16px;
+
+    color:#f1f1f1;
+
+}
+
+/* Form Layout */
+
+.row{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:20px;
+
+}
+
+.input-box{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* Labels */
+
+label{
+
+    color:white;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+/* Inputs */
+
+input,
+select,
+textarea{
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+/* Focus Effect */
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    transform:scale(1.02);
+
+    box-shadow:0 0 12px rgba(255,255,255,.5);
+
+}
+
+/* Textarea */
+
+textarea{
+
+    resize:none;
+
+}
+
+/* Checkbox */
+
+.check{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:white;
+
+    margin:25px 0;
+
+    font-size:15px;
+
+}
+
+.check input{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+/* Button */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(90deg,#ff9800,#ff5722);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button i{
+
+    margin-right:8px;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+
+    background:linear-gradient(90deg,#ff5722,#ff9800);
+
+}
+
+/* Placeholder */
+
+input::placeholder,
+textarea::placeholder{
+
+    color:#888;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .container{
+
+        padding:25px;
+
+    }
+
+    .row{
+
+        flex-direction:column;
+
+    }
+
+    .title h1{
+
+        font-size:28px;
+
+    }
+
+    .title i{
+
+        font-size:45px;
+
+    }
+
+}
