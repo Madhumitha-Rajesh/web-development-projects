@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Parent Teacher Meeting</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="meeting-container">
+
+
+    <div class="calendar-panel">
+
+
+        <div class="calendar-icon">
+
+            📅
+
+        </div>
+
+
+        <h1>
+
+            Meet & Connect
+
+        </h1>
+
+
+        <p>
+
+            Schedule a conversation with your child's teacher.
+
+        </p>
+
+
+
+        <div class="features">
+
+
+            <div>
+
+                🌱 Student Growth
+
+            </div>
+
+
+            <div>
+
+                💬 Parent Discussion
+
+            </div>
+
+
+            <div>
+
+                ⭐ Academic Review
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="booking-panel">
+
+
+        <h2>
+
+            Book Meeting Slot
+
+        </h2>
+
+
+        <p class="subtitle">
+
+            Fill appointment details
+
+        </p>
+
+
+
+
+        <form action="process.php" method="POST">
+
+
+
+            <div class="field">
+
+
+                <label>Parent Name</label>
+
+
+                <input 
+                type="text"
+                name="parent"
+                placeholder="Enter parent name"
+                required>
+
+
+            </div>
+
+
+
+
+            <div class="field">
+
+
+                <label>Student Name</label>
+
+
+                <input 
+                type="text"
+                name="student"
+                placeholder="Enter student name"
+                required>
+
+
+            </div>
+
+
+
+
+            <div class="field">
+
+
+                <label>Class</label>
+
+
+                <select name="class" required>
+
+
+                    <option value="">Select Class</option>
+
+                    <option value="I">Class I</option>
+
+                    <option value="II">Class II</option>
+
+                    <option value="III">Class III</option>
+
+                    <option value="IV">Class IV</option>
+
+                    <option value="V">Class V</option>
+
+
+                </select>
+
+
+            </div>
+
+
+
+
+            <div class="field">
+
+
+                <label>Select Meeting Slot</label>
+
+
+                <select name="slot" required>
+
+
+                    <option value="">Choose Time</option>
+
+                    <option value="10:00 AM">10:00 AM</option>
+
+                    <option value="11:00 AM">11:00 AM</option>
+
+                    <option value="2:00 PM">2:00 PM</option>
+
+                    <option value="3:00 PM">3:00 PM</option>
+
+
+                </select>
+
+
+            </div>
+
+
+
+
+            <div class="field">
+
+
+                <label>Meeting Date</label>
+
+
+                <input 
+                type="date"
+                name="date"
+                required>
+
+
+            </div>
+
+
+
+
+            <button type="submit">
+
+                Confirm Appointment
+
+            </button>
+
+
+
+        </form>
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>
