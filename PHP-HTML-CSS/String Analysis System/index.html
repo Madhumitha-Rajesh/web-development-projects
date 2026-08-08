@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>String Analysis System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left-panel">
+
+        <i class="fa-solid fa-file-lines"></i>
+
+        <h1>String Analyzer</h1>
+
+        <p>
+            Analyze your text in seconds. Find the number of vowels,
+            consonants, digits, and special characters instantly.
+        </p>
+
+    </div>
+
+    <div class="right-panel">
+
+        <h2>Analyze Your Title</h2>
+
+        <form action="process.php" method="POST">
+
+            <label>Enter Title</label>
+
+            <textarea
+            name="title"
+            rows="8"
+            placeholder="Example: The Future of AI 2026!"
+            required></textarea>
+
+            <button type="submit">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                Analyze String
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
